@@ -1,0 +1,6 @@
+<view class="chsCitysCom" a:if="{{show}}">
+  <view class="citys_box">
+   <citylist cityList="{{cityx}}" onChangedown="changedown" onCheckedChange="checkedChange"></citylist>
+  </view>
+  <view class="mask"></view>
+</view>

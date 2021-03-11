@@ -1,0 +1,4 @@
+<view>
+  <cu-city city="{{city}}" show="{{chsCityshow}}"></cu-city>
+  <view class="showComponent" onTap="showChsCity">显示</view>
+</view>

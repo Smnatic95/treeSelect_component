@@ -1,0 +1,5 @@
+{
+  "usingComponents":{
+    "cu-city":"../../component/cu-city/cu-city"
+  }
+}

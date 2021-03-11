@@ -1,0 +1,15 @@
+<view class="city {{city.down?"down":"up"}}" a:for="{{cityList}}" a:for-item="city">
+  <view class="info">
+    <view class="operation">
+      <view class="zDBtn" onTap="changedown" a:if="{{city.subList.length}}" data-ctcode="{{city.code}}">{{city.down?"-":"+"}}</view>
+      <checkbox value=""/ checked="{{city.isChecked}}" onChange="checkedChange" data-code="{{city.code}}"></checkbox>
+    </view>
+    <view class="city_name">
+           {{city.name}}
+    </view>
+  </view>
+  <!--下级列表-->
+  <view class="subList" a:if="{{city.subList.length}}">
+    <citylist cityList="{{city.subList}}" onChangedown="changedown" onCheckedChange="checkedChange"></citylist>
+  </view>
+</view>
